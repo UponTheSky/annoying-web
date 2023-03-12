@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "annoying-web"
+version = "0.1.0"
+description = "annoying web project"
+authors = ["UponTheSky <sailing.to.orbis@gmail.com>"]
+readme = "README.md"
+packages = [{include = "annoying_web"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+pytest = "^7.2.2"
+ruff = "^0.0.254"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
